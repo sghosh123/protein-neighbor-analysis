@@ -1,8 +1,8 @@
 # Protein Neighbor Analysis
 
-**Version 0.1.0** — reusable neighborhood, water-contact, and residue-occupancy analysis for molecular-dynamics trajectories.
+Neighborhood, water-contact, and residue-occupancy analysis for molecular-dynamics trajectories.
 
-This repository refactors the useful methods from the historical `neighbor_test.zip` research workspace into a configurable Python package. It supports both direct analysis of MD trajectories and aggregation of the old frame-keyed JSON files, without depending on hardcoded protein names, residue numbers, phase names, or file paths.
+It supports both direct analysis of MD trajectories and aggregation of the old frame-keyed JSON files, without depending on hardcoded protein names, residue numbers, phase names, or file paths.
 
 ## What it measures
 
