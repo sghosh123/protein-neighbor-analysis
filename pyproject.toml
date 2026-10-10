@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "protein-neighbor-analysis"
+version = "0.1.0"
+description = "Reusable, periodic-boundary-aware neighbor and contact analysis for molecular dynamics trajectories"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.23"]
+
+[project.optional-dependencies]
+trajectory = ["MDAnalysis>=2.6"]
+plot = ["matplotlib>=3.6"]
+all = ["MDAnalysis>=2.6", "matplotlib>=3.6"]
+test = ["pytest>=7", "MDAnalysis>=2.6", "matplotlib>=3.6"]
+
+[project.scripts]
+pna = "protein_neighbor_analysis.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"

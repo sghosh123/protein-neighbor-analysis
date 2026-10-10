@@ -1,0 +1,13 @@
+{
+  "0000": [
+    {"segid": "PROT", "resid": 12, "resname": "CYS", "name": "O"},
+    {"segid": "PROT", "resid": 14, "resname": "GLY", "name": "CA"},
+    {"segid": "WAT", "resid": 101, "resname": "TIP3", "name": "OH2"}
+  ],
+  "0001": [
+    {"segid": "PROT", "resid": 12, "resname": "CYS", "name": "O"},
+    {"segid": "WAT", "resid": 102, "resname": "TIP3", "name": "OH2"},
+    {"segid": "WAT", "resid": 102, "resname": "TIP3", "name": "H1"}
+  ],
+  "0002": []
+}

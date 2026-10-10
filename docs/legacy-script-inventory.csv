@@ -1,0 +1,10 @@
+source_path,role,decision
+plot_neighbor_no_hist.py,Frame neighbor-count trace and histogram,Refactored into shared count trace and integer-bin histogram; removed hardcoded file and plot range.
+zip.py,Archive creation helper,Not included; hardcoded local filesystem paths and not part of the scientific method.
+binding_loop_cys_neighbor_list/human/electronegative_neighbor_count_by_residue.py,Filtered atom-name counts aggregated across four phases,Refactored to optional atom-name filter; the dictionary reuse bug is eliminated by reading each JSON independently.
+binding_loop_cys_neighbor_list/human/neighbor_count_by_residue.py,Residue neighbor population summary,Refactored to atom_occupancy.csv and residue_occupancy.csv.
+binding_loop_cys_neighbor_list/human/plot_neighbor_no_hist.py,Multi-phase neighbor-count time series,Refactored to source-separated traces; no synthetic continuity between phases is assumed.
+binding_loop_cys_neighbor_list/human/neighbor_waters/electronegative_neighbor_count_by_residue.py,Filtered water-neighbor atom/contact summary,Reviewed as a legacy variant; functionality is represented by the shared configurable JSON-summary workflow.
+yeast_MBD_apo_neighbor/water_neighbor_count_by_residue_2.py,Water-neighbor count comparison,Not copied verbatim; replaced by source-separated JSON summary tables and plots.
+yeast_MBD_apo_neighbor/water_neighbor_count_by_residue.py,Water-neighbor count comparison,Not copied; syntax fails due to mixed tabs/spaces and its comparison reuses the same dataset; replaced by shared workflow.
+yeast_MBD_apo_neighbor/find_neighbor_waters.py,MDAnalysis per-frame neighbor extraction around a selected residue/atom,"Refactored into trajectory.py; corrected hardcoded central/search selections, explicit PBC mode, and clear output metrics."
